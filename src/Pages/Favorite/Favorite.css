@@ -1,0 +1,118 @@
+.favorite,
+.favorite-row-total {
+  max-width: 100%;
+}
+.favorite {
+  padding: 70px 50px;
+}
+.favorite-row-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.favorite-row-total span {
+  color: #0dcaf0;
+}
+.favorite-row-total button {
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.favorite-row-total button:hover {
+  background-color: #bb2d3b;
+}
+.favorite-row-table {
+  margin-top: 100px;
+}
+.favorite-table-header {
+  border-bottom: 1px solid #ddd;
+}
+.favorite-table-header th {
+  width: 20%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.favorite-row-table {
+  width: 100%;
+}
+.favorite-table-details {
+  text-align: center;
+}
+.favorite-table-details td {
+  padding: 15px 0px;
+}
+.favorite-table-details img {
+  width: 70%;
+  height: 150px;
+}
+.favorite-row-table p {
+  color: #0dcaf0;
+}
+.favorite-table-details button {
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #bb2d3b;
+  color: #bb2d3b;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.favorite-table-details button:hover {
+  background-color: #bb2d3b;
+  color: #fff;
+}
+.no-item {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+/* start rwd */
+@media screen and (max-width: 767px) {
+  .favorite,
+  .favorite-row-total {
+    max-width: 100%;
+  }
+  .favorite-row-total {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .favorite-table-header {
+    display: none;
+  }
+  .favorite-table-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .favorite-table-details td {
+    margin-top: 20px;
+  }
+  .favorite-table-details img {
+    width: 60%;
+    height: 200px;
+  }
+  .favorite-table-details:not(:first-child) {
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+  }
+}
+@media screen and (max-width: 400px){
+  .favorite,
+  .favorite-row-total {
+    max-width: 100%;
+  }
+  .favorite {
+    padding: 70px 10px;
+  }
+}
+/* end rwd */

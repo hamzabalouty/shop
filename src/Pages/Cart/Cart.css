@@ -1,0 +1,118 @@
+.cart,
+.cart-row-total {
+  max-width: 100%;
+}
+.cart {
+  padding: 70px 50px;
+}
+.cart-row-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-row-total span {
+  color: #0dcaf0;
+}
+.cart-row-total button {
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.cart-row-total button:hover {
+  background-color: #bb2d3b;
+}
+.cart-row-table {
+  margin-top: 100px;
+}
+.cart-table-header {
+  border-bottom: 1px solid #ddd;
+}
+.cart-table-header th {
+  width: 20%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.cart-row-table {
+  width: 100%;
+}
+.cart-table-details {
+  text-align: center;
+}
+.cart-table-details td {
+  padding: 15px 0px;
+}
+.cart-table-details img {
+  width: 70%;
+  height: 150px;
+}
+.cart-row-table p {
+  color: #0dcaf0;
+}
+.cart-table-details button {
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #bb2d3b;
+  color: #bb2d3b;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cart-table-details button:hover {
+  background-color: #bb2d3b;
+  color: #fff;
+}
+.no-item {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+/* start rwd */
+@media screen and (max-width: 767px) {
+  .cart,
+  .cart-row-total {
+    max-width: 100%;
+  }
+  .cart-row-total {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cart-table-header {
+    display: none;
+  }
+  .cart-table-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .cart-table-details td {
+    margin-top: 20px;
+  }
+  .cart-table-details img {
+    width: 60%;
+    height: 200px;
+  }
+  .cart-table-details:not(:first-child) {
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+  }
+}
+@media screen and (max-width: 400px){
+  .cart,
+  .cart-row-total {
+    max-width: 100%;
+  }
+  .cart {
+    padding: 70px 10px;
+  }
+}
+/* end rwd */

@@ -1,0 +1,116 @@
+.header {
+  max-width: 100%;
+  position: relative;
+}
+.header-container {
+  max-width: 100%;
+  background-color: #f8f9fa;
+  padding: 8px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-modal-head .header-logo,
+.header-container .header-logo {
+  color: #333333;
+  font-family: Dancing Script, cursive;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header-menu-icon {
+  background-color: transparent;
+  color: #333333;
+  font-size: 1.6rem;
+  border-radius: 7px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.header-menu-modal {
+  background-color: #fff;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  border: 3px solid #ddd;
+  outline: none;
+  z-index: 999;
+}
+.menu-modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+.menu-modal-close {
+  background-color: none;
+  font-size: 1.6rem;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.menu-modal-close:hover {
+  color: red;
+}
+
+.menu-modal-list {
+  display: flex;
+  flex-direction: column;
+}
+.menu-modal-list li {
+  list-style-type: none;
+  font-family: Dancing Script, cursive;
+  font-size: 1.6rem;
+  margin-top: 35px;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+.modal-list-link {
+  color: #333333;
+  font-family: Dancing Script, cursive;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-top: 15px;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+.menu-modal-list .active {
+  padding-left: 25px;
+  color: #b22222;
+}
+
+/* start rwd */
+@media screen and (max-width: 450px) {
+  .header,
+  .header-container {
+    max-width: 100%;
+  }
+  .modal-list-link {
+    font-size: 1rem;
+  }
+  .header-menu-modal{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  .header,
+  .header-container {
+    max-width: 100%;
+  }
+  .modal-list-link {
+    font-size: 1rem;
+  }
+  .header-menu-modal{
+    width: 40%;
+    z-index: 99;
+  }
+}
+/* end rwd */

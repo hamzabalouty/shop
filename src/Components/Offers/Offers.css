@@ -1,0 +1,131 @@
+.offers {
+    max-width: 100%;
+    margin-top: 50px;
+}
+.offers-container{
+    max-width: 100%;
+    margin: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    background-color: #f1f1f1;
+    padding: 50px;
+    border-radius: 10px;
+}
+.offers-content,
+.offers-image{
+    width: 45%;
+}
+.offers-content h3,
+.offers-content p,
+.offer-steps,
+.offers-search{
+    margin-top: 25px;
+}
+.offers-content h3{
+    color: #212529; 
+    font-size: 48px;
+}
+.offers-content p{
+    color: #777777;
+    font-size: 16px;
+}
+.offer-steps{
+    margin-left: 25px;
+}
+.offer-step-one,
+.offer-step-two,
+.offer-step-three{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.offer-one-num,
+.offer-two-num,
+.offer-three-num{
+    border-radius: 30px;
+    margin-right: 10px;
+    width: 60px;
+    height: 40px;
+}
+.offer-one-num{
+    background-color: #FFEBD2;  
+}
+.offer-one-num h5{
+    color: #562b7f;
+    text-align: center;
+    padding: 5px;
+}
+.offer-two-num{
+    background-color: #282874;
+}
+.offer-two-num h5{
+    color: #A3CBFF;
+    text-align: center;
+    padding: 5px;
+}
+.offer-three-num{
+    background-color: #F5B8B8;
+}
+.offer-three-num h5{
+    color: #8A2A2A;
+    text-align: center;
+    padding: 5px;
+}
+.offers-search{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+}
+.offers-search input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;    
+}
+.offers-image img{
+    width: 100%;
+}
+
+/* start rwd */
+@media screen and (max-width: 990px) {
+    .offers,
+    .offers-container{
+        max-width: 100%;
+    }
+    .offers-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .offers-content,
+    .offers-image{
+            width: 100%;
+    }
+    .offers-image{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .offers,
+    .offers-container{
+        max-width: 100%;
+    }
+    .offers-content h3{
+        font-size: 25px;
+    }
+    .offers-container{
+        margin: 0 10px;
+    }
+    .offer-step-one,
+    .offer-step-two,
+    .offer-step-three{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+/* end rwd */

@@ -1,0 +1,129 @@
+.imagepage,
+.imagepage-container {
+  max-width: 100%;
+}
+.imagepage {
+  margin-top: 70px;
+}
+.imagepage-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10%;
+  margin: 0 50px;
+  padding-top: 50px;
+}
+.imagepage-content,
+.imagepage-image {
+  width: 45%;
+}
+.imagepage-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.imagepage-content h4,
+.imagepage-content h2,
+.imagepage-content p {
+  font-family: Newsreader, serif;
+  margin-top: 20px;
+}
+.imagepage-content h4 {
+  color: #212529;
+  font-size: 30px;
+}
+.imagepage-content h2 {
+  color: #333333;
+  font-size: 48px;
+}
+.imagepage-content p {
+  color: #777777;
+  font-size: 16px;
+}
+.imagepage-btns {
+  display: flex;
+  gap: 25px;
+  margin-left: 15px;
+}
+.st-btn,
+.nd-btn {
+  margin-top: 20px;
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Newsreader, serif;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+.st-btn {
+  color: #fff;
+  background-color: #212529;
+}
+.st-btn:hover {
+  background-color: #4d5154;
+}
+.nd-btn {
+  color: #4d5154;
+  background-color: #d3d4d5;
+}
+.nd-btn:hover {
+  background-color: #babbbc;
+}
+.imagepage-image img {
+  width: 80%;
+}
+
+/* start rwd */
+@media screen and (max-width: 767px) {
+  .imagepage,
+  .imagepage-container {
+    max-width: 100%;
+  }
+  .imagepage-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .imagepage-content,
+  .imagepage-image {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .imagepage-btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imagepage,
+  .imagepage-container {
+    max-width: 100%;
+  }
+  .imagepage-content h2{
+    font-size: 25px;
+  }
+  .imagepage-content h4{
+    font-size: 20px;
+  }
+  .imagepage-container {
+    margin: 0 10px;
+  }
+  .imagepage-btns button{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .imagepage-image,
+  .imagepage-image img{
+    width: 100%;
+  }
+  .imagepage-image img{
+    height: 200px;
+  }
+}
+/* end rwd */
